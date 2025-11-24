@@ -77,7 +77,7 @@ CREATE DATABASE quizapp;
 
 #### 3.3 Verify the Import
 
-Execute the following query to verify the database setup:
+Execute the following queries to verify the database setup:
 
 ```sql
 USE quizapp;
@@ -114,7 +114,7 @@ app.config['MYSQL_DB'] = 'quizapp'
 
 ```bash
 # Navigate to project directory
-cd python-flask-ca2-quizapp
+cd Role-Based-Quiz-Application
 
 # Run the application
 python app.py
