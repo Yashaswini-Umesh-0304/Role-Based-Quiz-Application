@@ -1,0 +1,11 @@
+qid,q,a,b,c,d,ans
+1,"Which protocol layer uses the protocols WWW, HTTP, FTP, SMTP etc.?",Application,Transport,Network,Data-Link,a
+2,How many layers are there in the ISO OSI reference model?,5,7,3,4,b
+3,What is the full form of OSI?,optical service implementation,open service Internet,open system interconnection,operating system interface,c
+4,What is computer network?,Sharing of resources and information,Collection of hardware components and computers,Interconnected by communication channels,All of the above,d
+5,How many layers are there in the TCP/IP protocol suite?,5,7,6,3,a
+6,Which topology requires a multipoint connection?,Ring,Bus,Star,Mesh,b
+7,What type of transmission is involved in communication between a computer and a keyboard?,Half-duplex,Full-duplex,Simplex,Automatic,c
+8,What are nodes in a computer network?,the computer that routes the data,the computer that terminates the data,the computer that originates the data,all of the above,d
+9,Three or more devices share a link in ________ connection.,Multipoint,Unipoint,Point to Point,Simplex,a
+10,Which connection is necessary for a computer to join the internet?,internet society,internet service provider,different computer,internet architecture board,b

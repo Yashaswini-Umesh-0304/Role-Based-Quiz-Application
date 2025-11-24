@@ -1,0 +1,11 @@
+qid,q,a,b,c,d,ans
+1,How many pixels are there in a 1024X1024 frame buffer?,2^10 pixels,2^15 pixels,2^20 pixels,2^30 pixels,c
+2,How many memory bits are required for a 3-bit plane 512X512 element raster?,262144 memory bits,786432 memory bits,1536 memory bits,None,b
+3,CRT consists of which coating?,Phosphorous,Carbon dioxide,Neon,Oxygen,a
+4,OpenGL API function used to enter into the event processing loop is?,glutLoop(),gluLookat(),glutMainLoop(),glFinish(),c
+5,Depth of frame buffer means?,No. of byte per pixel,No. of nibble per pixel,No. of bits per pixel,None,c
+6,"The transformation in which the size of an object can be modified in x-direction, y-direction, and z-direction is?",Translation,Scaling,Rotation,All of these,b
+7,"In which transformation, the mirror image of an object can be seen with respect to any axis?",Reflection,Shearing,Translation,None,a
+8,Two consecutive scaling transformations S1 and S2 are?,Additive,Subtractive,Multiplicative,None,c
+9,What should be the sequence of transformations that are required to perform rotation of an object around an arbitrary point?,"Inverse Translation, Rotation, Translation","Scaling, Translation, Rotation","Translation, Rotation, Inverse Translation","Rotation, Translation, Scaling",c
+10,"To create color in a lookup table, we use?",glIndexi(),glutSetColor(),glClearIndex(),None,b

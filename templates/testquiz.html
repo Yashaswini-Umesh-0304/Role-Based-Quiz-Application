@@ -1,0 +1,62 @@
+{% extends 'layout.html' %}
+{% block body %}
+<br><br><br>
+<center><h2 class="h4">Answer the MCQs given below. Attend all the questions before submitting.</h2></center>
+<br><br>
+
+<div class="mb-10">
+    <div class="table-responsive-sm shadow-soft rounded">
+        <form action="" method="POST" id="test-form">
+            {% for data in callresults %}
+                <table class="table table-responsive-sm">
+                    <tr>
+                        <th class="border-0" scope="col">Question No. {{data['qid']}}</th>
+                        <th class="border-0" scope="col">Marks: {{data['marks']}}</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2"><center>{{data['q']}}</center></th>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="{{data['qid']}}" value="a"> {{data['a']}}</td>
+                        <td><input type="radio" name="{{data['qid']}}" value="b"> {{data['b']}}</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="{{data['qid']}}" value="c"> {{data['c']}}</td>
+                        <td><input type="radio" name="{{data['qid']}}" value="d"> {{data['d']}}</td>
+                    </tr>
+                </table>
+                <br><br>
+            {% endfor %}
+            <center><input type="submit" class="btn btn-success" value="Submit"></center>
+            <br><br>
+        </form>
+    </div>
+</div>
+
+<script>
+    let tabInactive = false;
+    let timeoutWarning;
+
+    // Detect tab visibility changes
+    document.addEventListener("visibilitychange", function () {
+        if (document.visibilityState === "hidden") {
+            tabInactive = true;
+            timeoutWarning = setTimeout(function () {
+                alert("Please return to the test page to avoid losing progress.");
+            }, 5000); // Adjust time as needed
+        } else {
+            tabInactive = false;
+            clearTimeout(timeoutWarning); // Clear warning timeout
+        }
+    });
+
+    // Prevent accidental form submission or refresh
+    window.addEventListener('beforeunload', function (event) {
+        if (tabInactive) {
+            event.preventDefault();
+            event.returnValue = ""; // Some browsers require this to show the dialog
+            return "Are you sure you want to leave? Your progress may be lost.";
+        }
+    });
+</script>
+{% endblock %}

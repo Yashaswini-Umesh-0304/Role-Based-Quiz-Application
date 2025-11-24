@@ -1,0 +1,5 @@
+qid,q,a,b,c,d,ans
+1,Java?,yes,no,maybe,idk,c
+2,Python?,yes,no,maybe,idk,a
+3,C?,yes,no,maybe,idk,b
+4,C++?,yes,no,maybe,idk,d
